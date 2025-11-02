@@ -1,0 +1,586 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>新媒体代运营前期调查咨询表</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#F7D000',
+                        secondary: '#F9E076',
+                        accent: '#F5C300',
+                        neutral: '#000000',
+                        'neutral-light': '#F3F4F6',
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'system-ui', 'sans-serif'],
+                    },
+                    boxShadow: {
+                        'card': '0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05)',
+                    }
+                }
+            }
+        }
+    </script>
+    <style type="text/tailwindcss">
+        @layer utilities {
+            .form-section {
+                @apply mb-8 p-6 bg-gradient-to-r from-white to-blue-50 rounded-lg shadow-card border-l-4 border-primary;
+            }
+            .form-title {
+                @apply text-xl font-bold text-neutral mb-4 flex items-center;
+            }
+            .form-title i {
+                @apply mr-2 text-primary;
+            }
+            .form-group {
+                @apply mb-4;
+            }
+            .form-label {
+                @apply block text-sm font-medium text-gray-700 mb-1;
+            }
+            .form-input {
+                @apply w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-purple-500 focus:border-transparent transition-all bg-gradient-to-r from-white to-purple-50;
+            }
+            .form-textarea {
+                @apply w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-purple-500 focus:border-transparent transition-all min-h-[100px] bg-gradient-to-r from-white to-purple-50;
+            }
+            .form-select {
+                @apply w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-purple-500 focus:border-transparent transition-all bg-gradient-to-r from-white to-purple-50;
+            }
+            .form-checkbox {
+                @apply h-4 w-4 text-primary focus:ring-primary border-gray-300 rounded;
+            }
+            .form-radio {
+                @apply h-4 w-4 text-primary focus:ring-primary border-gray-300;
+            }
+            .form-hint {
+                @apply text-xs text-gray-500 mt-1;
+            }
+            .form-submit {
+                @apply bg-gradient-to-r from-purple-500 to-pink-500 hover:from-purple-600 hover:to-pink-600 text-white font-bold py-3 px-6 rounded-md transition-all duration-300 transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-purple-500 focus:ring-opacity-50 shadow-lg;
+            }
+            .form-grid {
+                @apply grid grid-cols-1 md:grid-cols-2 gap-4;
+            }
+            .form-tag {
+                @apply inline-flex items-center px-3 py-1 rounded-full text-xs font-medium bg-blue-100 text-blue-800 mr-2 mb-2;
+            }
+        }
+    </style>
+</head>
+<body class="bg-gradient-to-br from-purple-100 via-pink-100 to-red-100 min-h-screen">
+    <div class="container mx-auto px-4 py-8 max-w-5xl">
+        <!-- 头部 -->
+        <header class="mb-8 text-center bg-gradient-to-r from-purple-500 via-pink-500 to-red-500 p-6 rounded-xl shadow-lg">
+            <div class="mb-6">
+                <img src="https://p11-flow-imagex-download-sign.byteimg.com/tos-cn-i-a9rns2rl98/52f07895752e4c36be7de7f4156c1da7.PNG~tplv-a9rns2rl98-24:720:720.png?rcl=2025110206110463AC82FBD1F07AFC704B&rk3s=8e244e95&rrcfp=8a172a1a&x-expires=1762639864&x-signature=3vwvrgwJXlZVXn7KIArS7W4k3tQ%3D" alt="探达文商" class="w-48 mx-auto">
+            </div>
+            <h1 class="text-3xl font-bold text-white mb-2" style="font-family: 'Microsoft YaHei', sans-serif;">新媒体代运营前期调查咨询表</h1>
+            <p class="text-white">感谢您选择我们的新媒体代运营服务，请填写以下信息，帮助我们更好地了解您的需求</p>
+        </header>
+
+        <!-- 表单 -->
+        <form id="clientSurveyForm" action="https://api.web3forms.com/submit" method="POST" class="space-y-6">
+            <input type="hidden" name="access_key" value="79f8415a-22dd-4e57-bd6d-00267373291e">
+            <input type="hidden" name="subject" value="新媒体代运营调研表提交">
+            <input type="hidden" name="from_name" value="探达文商调研系统">
+            <!-- 基本信息 -->
+            <section class="form-section">
+                <h2 class="form-title bg-gradient-to-r from-blue-500 to-purple-500 text-white p-2 rounded-lg"><img src="https://p11-flow-imagex-download-sign.byteimg.com/tos-cn-i-a9rns2rl98/52f07895752e4c36be7de7f4156c1da7.PNG~tplv-a9rns2rl98-24:720:720.png?rcl=2025110206110463AC82FBD1F07AFC704B&rk3s=8e244e95&rrcfp=8a172a1a&x-expires=1762639864&x-signature=3vwvrgwJXlZVXn7KIArS7W4k3tQ%3D" alt="图标" class="w-6 h-6 mr-2 bg-white rounded-full p-1">客户基本信息</h2>
+                <div class="form-grid">
+                    <div class="form-group">
+                        <label for="companyName" class="form-label">公司名称/品牌名称 <span class="text-red-500">*</span></label>
+                        <input type="text" id="companyName" name="公司名称" class="form-input" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="industry" class="form-label">所属行业 <span class="text-red-500">*</span></label>
+                        <select id="industry" name="所属行业" class="form-select" required>
+                            <option value="">请选择行业</option>
+                            <option value="tech">科技/互联网</option>
+                            <option value="retail">零售/电商</option>
+                            <option value="education">教育/培训</option>
+                            <option value="finance">金融/保险</option>
+                            <option value="healthcare">医疗/健康</option>
+                            <option value="fashion">时尚/美妆</option>
+                            <option value="food">餐饮/食品</option>
+                            <option value="travel">旅游/酒店</option>
+                            <option value="realestate">房地产/建筑</option>
+                            <option value="manufacturing">制造业</option>
+                            <option value="other">其他行业</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="companySize" class="form-label">公司规模</label>
+                        <select id="companySize" name="公司规模" class="form-select">
+                            <option value="">请选择规模</option>
+                            <option value="small">小型企业 (1-50人)</option>
+                            <option value="medium">中型企业 (51-500人)</option>
+                            <option value="large">大型企业 (501-5000人)</option>
+                            <option value="enterprise">超大型企业 (5000人以上)</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="contactPerson" class="form-label">联系人姓名 <span class="text-red-500">*</span></label>
+                        <input type="text" id="contactPerson" name="联系人姓名" class="form-input" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="contactPhone" class="form-label">联系电话 <span class="text-red-500">*</span></label>
+                        <input type="tel" id="contactPhone" name="联系电话" class="form-input" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="contactEmail" class="form-label">电子邮箱 <span class="text-red-500">*</span></label>
+                        <input type="email" id="contactEmail" name="email" class="form-input" required>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="mainProducts" class="form-label">主要产品/服务 <span class="text-red-500">*</span></label>
+                    <textarea id="mainProducts" name="主要产品服务" class="form-textarea" required></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="targetAudience" class="form-label">目标客群画像 <span class="text-red-500">*</span></label>
+                    <textarea id="targetAudience" name="目标客群画像" class="form-textarea" required></textarea>
+                    <p class="form-hint">例如：年龄段、性别、地域、消费能力、兴趣爱好等</p>
+                </div>
+            </section>
+
+            <!-- 品牌现状分析 -->
+            <section class="form-section">
+                <h2 class="form-title bg-gradient-to-r from-pink-500 to-red-500 text-white p-2 rounded-lg"><img src="https://p11-flow-imagex-download-sign.byteimg.com/tos-cn-i-a9rns2rl98/52f07895752e4c36be7de7f4156c1da7.PNG~tplv-a9rns2rl98-24:720:720.png?rcl=2025110206110463AC82FBD1F07AFC704B&rk3s=8e244e95&rrcfp=8a172a1a&x-expires=1762639864&x-signature=3vwvrgwJXlZVXn7KIArS7W4k3tQ%3D" alt="图标" class="w-6 h-6 mr-2 bg-white rounded-full p-1">品牌现状分析</h2>
+                <div class="form-group">
+                    <label class="form-label">目前已有的社交媒体平台</label>
+                    <div class="space-y-2">
+                        <div class="flex items-center">
+                            <input type="checkbox" id="platform-wechat" name="platforms" value="wechat" class="form-checkbox">
+                            <label for="platform-wechat" class="ml-2 text-sm text-gray-700">微信公众号</label>
+                        </div>
+                        <div class="flex items-center">
+                            <input type="checkbox" id="platform-weibo" name="platforms" value="weibo" class="form-checkbox">
+                            <label for="platform-weibo" class="ml-2 text-sm text-gray-700">微博</label>
+                        </div>
+                        <div class="flex items-center">
+                            <input type="checkbox" id="platform-douyin" name="platforms" value="douyin" class="form-checkbox">
+                            <label for="platform-douyin" class="ml-2 text-sm text-gray-700">抖音</label>
+                        </div>
+                        <div class="flex items-center">
+                            <input type="checkbox" id="platform-kuaishou" name="platforms" value="kuaishou" class="form-checkbox">
+                            <label for="platform-kuaishou" class="ml-2 text-sm text-gray-700">快手</label>
+                        </div>
+                        <div class="flex items-center">
+                            <input type="checkbox" id="platform-bilibili" name="platforms" value="bilibili" class="form-checkbox">
+                            <label for="platform-bilibili" class="ml-2 text-sm text-gray-700">哔哩哔哩</label>
+                        </div>
+                        <div class="flex items-center">
+                            <input type="checkbox" id="platform-xiaohongshu" name="platforms" value="xiaohongshu" class="form-checkbox">
+                            <label for="platform-xiaohongshu" class="ml-2 text-sm text-gray-700">小红书</label>
+                        </div>
+                        <div class="flex items-center">
+                            <input type="checkbox" id="platform-other" name="platforms" value="other" class="form-checkbox">
+                            <label for="platform-other" class="ml-2 text-sm text-gray-700">其他平台</label>
+                        </div>
+                    </div>
+                </div>
+                
+                <div id="platformDetails" class="space-y-4 mt-4 hidden">
+                    <div class="form-group">
+                        <label for="platformFollowers" class="form-label">各平台粉丝数量</label>
+                        <textarea id="platformFollowers" name="各平台粉丝数量" class="form-textarea" placeholder="例如：微信公众号5万，微博20万，抖音10万等"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="platformActivity" class="form-label">各平台活跃度</label>
+                        <select id="platformActivity" name="各平台活跃度" class="form-select">
+                            <option value="">请选择整体活跃度</option>
+                            <option value="high">高（日均互动100+）</option>
+                            <option value="medium">中（日均互动30-100）</option>
+                            <option value="low">低（日均互动30以下）</option>
+                            <option value="none">几乎无互动</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="contentStyle" class="form-label">现有内容风格</label>
+                    <textarea id="contentStyle" name="现有内容风格" class="form-textarea" placeholder="描述您目前的内容风格，例如：专业干货、轻松幽默、情感共鸣等"></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="publishFrequency" class="form-label">内容发布频率</label>
+                    <select id="publishFrequency" name="内容发布频率" class="form-select">
+                        <option value="">请选择发布频率</option>
+                        <option value="daily">每日更新</option>
+                        <option value="weekly3">每周2-3次</option>
+                        <option value="weekly1">每周1次</option>
+                        <option value="monthly">每月2-4次</option>
+                        <option value="irregular">不定期更新</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="currentPainPoints" class="form-label">目前遇到的主要痛点 <span class="text-red-500">*</span></label>
+                    <textarea id="currentPainPoints" name="目前遇到的主要痛点" class="form-textarea" required></textarea>
+                    <p class="form-hint">例如：内容创作困难、粉丝增长缓慢、互动率低、转化率不高等</p>
+                </div>
+                <div class="form-group">
+                    <label for="competitors" class="form-label">主要竞争对手分析</label>
+                    <textarea id="competitors" name="主要竞争对手分析" class="form-textarea" placeholder="请列出3-5个主要竞争对手及其新媒体运营优势"></textarea>
+                </div>
+            </section>
+
+            <!-- 营销目标设定 -->
+            <section class="form-section">
+                <h2 class="form-title bg-gradient-to-r from-yellow-500 to-orange-500 text-white p-2 rounded-lg"><img src="https://p11-flow-imagex-download-sign.byteimg.com/tos-cn-i-a9rns2rl98/52f07895752e4c36be7de7f4156c1da7.PNG~tplv-a9rns2rl98-24:720:720.png?rcl=2025110206110463AC82FBD1F07AFC704B&rk3s=8e244e95&rrcfp=8a172a1a&x-expires=1762639864&x-signature=3vwvrgwJXlZVXn7KIArS7W4k3tQ%3D" alt="图标" class="w-6 h-6 mr-2 bg-white rounded-full p-1">营销目标设定</h2>
+                <div class="form-group">
+                    <label for="shortTermGoals" class="form-label">短期目标（1-3个月） <span class="text-red-500">*</span></label>
+                    <textarea id="shortTermGoals" name="短期目标" class="form-textarea" required></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="midTermGoals" class="form-label">中期目标（3-6个月）</label>
+                    <textarea id="midTermGoals" name="中期目标" class="form-textarea"></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="longTermGoals" class="form-label">长期目标（6-12个月）</label>
+                    <textarea id="longTermGoals" name="长期目标" class="form-textarea"></textarea>
+                </div>
+                
+                <div class="form-group">
+                    <label class="form-label">KPI指标期望</label>
+                    <div class="space-y-3">
+                        <div class="flex items-center">
+                            <input type="checkbox" id="kpi-followers" name="KPI-粉丝增长" value="是" class="form-checkbox">
+                            <label for="kpi-followers" class="ml-2 text-sm text-gray-700">粉丝增长</label>
+                            <input type="number" id="followersTarget" name="粉丝增长-目标数量" placeholder="目标数量" class="form-input ml-4 w-32 hidden">
+                        </div>
+                        <div class="flex items-center">
+                            <input type="checkbox" id="kpi-engagement" name="KPI-互动率提升" value="是" class="form-checkbox">
+                            <label for="kpi-engagement" class="ml-2 text-sm text-gray-700">互动率提升</label>
+                            <input type="number" id="engagementTarget" name="互动率提升-目标百分比" placeholder="目标百分比" class="form-input ml-4 w-32 hidden">
+                        </div>
+                        <div class="flex items-center">
+                            <input type="checkbox" id="kpi-conversion" name="KPI-转化率提升" value="是" class="form-checkbox">
+                            <label for="kpi-conversion" class="ml-2 text-sm text-gray-700">转化率提升</label>
+                            <input type="number" id="conversionTarget" name="转化率提升-目标百分比" placeholder="目标百分比" class="form-input ml-4 w-32 hidden">
+                        </div>
+                        <div class="flex items-center">
+                            <input type="checkbox" id="kpi-awareness" name="KPI-品牌知名度提升" value="是" class="form-checkbox">
+                            <label for="kpi-awareness" class="ml-2 text-sm text-gray-700">品牌知名度提升</label>
+                        </div>
+                        <div class="flex items-center">
+                            <input type="checkbox" id="kpi-sales" name="KPI-销售额增长" value="是" class="form-checkbox">
+                            <label for="kpi-sales" class="ml-2 text-sm text-gray-700">销售额增长</label>
+                            <input type="number" id="salesTarget" name="销售额增长-目标金额" placeholder="目标金额" class="form-input ml-4 w-32 hidden">
+                        </div>
+                        <div class="flex items-center">
+                            <input type="checkbox" id="kpi-consultation" name="KPI-客户进线咨询" value="是" class="form-checkbox">
+                            <label for="kpi-consultation" class="ml-2 text-sm text-gray-700">客户进线咨询</label>
+                            <input type="number" id="consultationTarget" name="客户进线咨询-目标数量" placeholder="目标数量" class="form-input ml-4 w-32 hidden">
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 内容偏好 -->
+            <section class="form-section">
+                <h2 class="form-title bg-gradient-to-r from-green-500 to-teal-500 text-white p-2 rounded-lg"><img src="https://p11-flow-imagex-download-sign.byteimg.com/tos-cn-i-a9rns2rl98/52f07895752e4c36be7de7f4156c1da7.PNG~tplv-a9rns2rl98-24:720:720.png?rcl=2025110206110463AC82FBD1F07AFC704B&rk3s=8e244e95&rrcfp=8a172a1a&x-expires=1762639864&x-signature=3vwvrgwJXlZVXn7KIArS7W4k3tQ%3D" alt="图标" class="w-6 h-6 mr-2 bg-white rounded-full p-1">内容偏好</h2>
+                <div class="form-group">
+                    <label class="form-label">偏好的内容类型</label>
+                    <div class="grid grid-cols-2 md:grid-cols-3 gap-2">
+                        <div class="flex items-center">
+                            <input type="checkbox" id="content-article" name="contentTypes" value="article" class="form-checkbox">
+                            <label for="content-article" class="ml-2 text-sm text-gray-700">图文文章</label>
+                        </div>
+                        <div class="flex items-center">
+                            <input type="checkbox" id="content-shortvideo" name="contentTypes" value="shortvideo" class="form-checkbox">
+                            <label for="content-shortvideo" class="ml-2 text-sm text-gray-700">短视频</label>
+                        </div>
+                        <div class="flex items-center">
+                            <input type="checkbox" id="content-live" name="contentTypes" value="live" class="form-checkbox">
+                            <label for="content-live" class="ml-2 text-sm text-gray-700">直播</label>
+                        </div>
+                        <div class="flex items-center">
+                            <input type="checkbox" id="content-infographic" name="contentTypes" value="infographic" class="form-checkbox">
+                            <label for="content-infographic" class="ml-2 text-sm text-gray-700">信息图表</label>
+                        </div>
+                        <div class="flex items-center">
+                            <input type="checkbox" id="content-podcast" name="contentTypes" value="podcast" class="form-checkbox">
+                            <label for="content-podcast" class="ml-2 text-sm text-gray-700">音频/播客</label>
+                        </div>
+                        <div class="flex items-center">
+                            <input type="checkbox" id="content-interview" name="contentTypes" value="interview" class="form-checkbox">
+                            <label for="content-interview" class="ml-2 text-sm text-gray-700">访谈/对话</label>
+                        </div>
+                        <div class="flex items-center">
+                            <input type="checkbox" id="content-case" name="contentTypes" value="case" class="form-checkbox">
+                            <label for="content-case" class="ml-2 text-sm text-gray-700">案例分析</label>
+                        </div>
+                        <div class="flex items-center">
+                            <input type="checkbox" id="content-tutorial" name="contentTypes" value="tutorial" class="form-checkbox">
+                            <label for="content-tutorial" class="ml-2 text-sm text-gray-700">教程/指南</label>
+                        </div>
+                        <div class="flex items-center">
+                            <input type="checkbox" id="content-other" name="contentTypes" value="other" class="form-checkbox">
+                            <label for="content-other" class="ml-2 text-sm text-gray-700">其他</label>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="form-group">
+                    <label for="brandTone" class="form-label">品牌调性要求 <span class="text-red-500">*</span></label>
+                    <div class="grid grid-cols-2 md:grid-cols-4 gap-2">
+                        <div class="flex items-center">
+                            <input type="radio" id="tone-professional" name="brandTone" value="professional" class="form-radio">
+                            <label for="tone-professional" class="ml-2 text-sm text-gray-700">专业权威</label>
+                        </div>
+                        <div class="flex items-center">
+                            <input type="radio" id="tone-friendly" name="brandTone" value="friendly" class="form-radio">
+                            <label for="tone-friendly" class="ml-2 text-sm text-gray-700">亲切友好</label>
+                        </div>
+                        <div class="flex items-center">
+                            <input type="radio" id="tone-humorous" name="brandTone" value="humorous" class="form-radio">
+                            <label for="tone-humorous" class="ml-2 text-sm text-gray-700">幽默风趣</label>
+                        </div>
+                        <div class="flex items-center">
+                            <input type="radio" id="tone-elegant" name="brandTone" value="elegant" class="form-radio">
+                            <label for="tone-elegant" class="ml-2 text-sm text-gray-700">优雅高端</label>
+                        </div>
+                        <div class="flex items-center">
+                            <input type="radio" id="tone-innovative" name="brandTone" value="innovative" class="form-radio">
+                            <label for="tone-innovative" class="ml-2 text-sm text-gray-700">创新前卫</label>
+                        </div>
+                        <div class="flex items-center">
+                            <input type="radio" id="tone-emotional" name="brandTone" value="emotional" class="form-radio">
+                            <label for="tone-emotional" class="ml-2 text-sm text-gray-700">情感共鸣</label>
+                        </div>
+                        <div class="flex items-center">
+                            <input type="radio" id="tone-practical" name="brandTone" value="practical" class="form-radio">
+                            <label for="tone-practical" class="ml-2 text-sm text-gray-700">实用干货</label>
+                        </div>
+                        <div class="flex items-center">
+                            <input type="radio" id="tone-other" name="brandTone" value="other" class="form-radio">
+                            <label for="tone-other" class="ml-2 text-sm text-gray-700">其他</label>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="form-group">
+                    <label for="expectedFrequency" class="form-label">期望的内容发布频率</label>
+                    <select id="expectedFrequency" name="期望的内容发布频率" class="form-select">
+                        <option value="">请选择期望频率</option>
+                        <option value="daily">每日更新</option>
+                        <option value="weekly3">每周2-3次</option>
+                        <option value="weekly1">每周1次</option>
+                        <option value="biweekly">每两周1次</option>
+                        <option value="monthly">每月2-4次</option>
+                    </select>
+                </div>
+                
+                <div class="form-group">
+                    <label for="specialContent" class="form-label">特殊内容要求</label>
+                    <textarea id="specialContent" name="特殊内容要求" class="form-textarea" placeholder="例如：产品展示、用户案例、行业洞察、活动推广等"></textarea>
+                </div>
+            </section>
+
+            <!-- 预算与时间 -->
+            <section class="form-section">
+                <h2 class="form-title bg-gradient-to-r from-indigo-500 to-blue-500 text-white p-2 rounded-lg"><img src="https://p11-flow-imagex-download-sign.byteimg.com/tos-cn-i-a9rns2rl98/52f07895752e4c36be7de7f4156c1da7.PNG~tplv-a9rns2rl98-24:720:720.png?rcl=2025110206110463AC82FBD1F07AFC704B&rk3s=8e244e95&rrcfp=8a172a1a&x-expires=1762639864&x-signature=3vwvrgwJXlZVXn7KIArS7W4k3tQ%3D" alt="图标" class="w-6 h-6 mr-2 bg-white rounded-full p-1">预算与时间</h2>
+                <div class="form-group">
+                    <label for="budgetRange" class="form-label">月度预算范围 <span class="text-red-500">*</span></label>
+                    <select id="budgetRange" name="月度预算范围" class="form-select" required>
+                        <option value="">请选择预算范围</option>
+                        <option value="5k-10k">5,000-10,000元</option>
+                        <option value="10k-30k">10,000-30,000元</option>
+                        <option value="30k-50k">30,000-50,000元</option>
+                        <option value="50k-100k">50,000-100,000元</option>
+                        <option value="100k+">100,000元以上</option>
+                    </select>
+                </div>
+                
+                <div class="form-group">
+                    <label for="cooperationPeriod" class="form-label">期望合作期限</label>
+                    <select id="cooperationPeriod" name="期望合作期限" class="form-select">
+                        <option value="">请选择合作期限</option>
+                        <option value="3months">3个月</option>
+                        <option value="6months">6个月</option>
+                        <option value="12months">12个月</option>
+                        <option value="longterm">长期合作</option>
+                    </select>
+                </div>
+                
+                <div class="form-group">
+                    <label for="startDate" class="form-label">项目期望启动时间</label>
+                    <input type="date" id="startDate" name="项目期望启动时间" class="form-input">
+                </div>
+                
+                <div class="form-group">
+                    <label for="keyMarketingDates" class="form-label">关键营销节点</label>
+                    <textarea id="keyMarketingDates" name="关键营销节点" class="form-textarea" placeholder="例如：产品发布会、促销活动、行业展会等重要日期"></textarea>
+                </div>
+            </section>
+
+            <!-- 其他需求 -->
+            <section class="form-section">
+                <h2 class="form-title bg-gradient-to-r from-purple-500 to-pink-500 text-white p-2 rounded-lg"><img src="https://p11-flow-imagex-download-sign.byteimg.com/tos-cn-i-a9rns2rl98/52f07895752e4c36be7de7f4156c1da7.PNG~tplv-a9rns2rl98-24:720:720.png?rcl=2025110206110463AC82FBD1F07AFC704B&rk3s=8e244e95&rrcfp=8a172a1a&x-expires=1762639864&x-signature=3vwvrgwJXlZVXn7KIArS7W4k3tQ%3D" alt="图标" class="w-6 h-6 mr-2 bg-white rounded-full p-1">其他需求</h2>
+                <div class="form-group">
+                    <label for="specialActivities" class="form-label">特殊活动需求</label>
+                    <textarea id="specialActivities" name="特殊活动需求" class="form-textarea" placeholder="例如：线上直播、粉丝互动、跨界合作等特殊活动需求"></textarea>
+                </div>
+                
+                <div class="form-group">
+                    <label for="dataAnalysis" class="form-label">数据分析需求</label>
+                    <textarea id="dataAnalysis" name="数据分析需求" class="form-textarea" placeholder="例如：定期数据报告、竞品分析、用户画像分析等"></textarea>
+                </div>
+                
+                <div class="form-group">
+                    <label for="otherRequirements" class="form-label">其他定制化要求</label>
+                    <textarea id="otherRequirements" name="其他定制化要求" class="form-textarea" placeholder="请填写其他未涵盖的特殊需求"></textarea>
+                </div>
+            </section>
+
+            <!-- 提交按钮 -->
+            <div class="text-center pt-4 pb-8">
+                <button type="submit" class="form-submit">
+                    <i class="fa fa-paper-plane mr-2"></i>探达文商，一键探索
+                </button>
+            </div>
+        </form>
+
+        <!-- 页脚 -->
+        <footer class="text-center text-neutral text-sm mt-12 pb-8 bg-gradient-to-r from-yellow-100 via-green-100 to-blue-100 p-4 rounded-lg">
+            <p>© 2025 探达文商 | 极繁运营，极简设计</p>
+            <p class="mt-1">表单提交后，数据将发送至 166779149@qq.com</p>
+        </footer>
+    </div>
+
+    <!-- 成功提交弹窗 -->
+    <div id="successModal" class="fixed inset-0 bg-gradient-to-r from-purple-500 via-pink-500 to-red-500 bg-opacity-70 flex items-center justify-center z-50 hidden">
+        <div class="bg-white rounded-lg p-8 max-w-md w-full mx-4 transform transition-all">
+            <div class="text-center">
+                <div class="inline-flex items-center justify-center w-16 h-16 rounded-full bg-green-100 text-green-500 mb-4">
+                    <i class="fa fa-check-circle text-3xl"></i>
+                </div>
+                <h3 class="text-xl font-bold text-gray-900 mb-2">提交成功！</h3>
+                <p class="text-gray-600 mb-6">感谢您填写调研表，我们的客户经理将在24小时内与您联系。</p>
+                <button id="closeModal" class="bg-primary hover:bg-blue-700 text-white font-bold py-2 px-4 rounded transition-colors">
+                    关闭
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // 平台选择显示详细信息
+        const platformCheckboxes = document.querySelectorAll('input[name="platforms"]');
+        const platformDetails = document.getElementById('platformDetails');
+        
+        platformCheckboxes.forEach(checkbox => {
+            checkbox.addEventListener('change', () => {
+                const anyChecked = Array.from(platformCheckboxes).some(cb => cb.checked);
+                platformDetails.classList.toggle('hidden', !anyChecked);
+            });
+        });
+
+        // KPI指标选择显示输入框
+        document.getElementById('kpi-followers').addEventListener('change', function() {
+            document.getElementById('followersTarget').classList.toggle('hidden', !this.checked);
+        });
+        document.getElementById('kpi-engagement').addEventListener('change', function() {
+            document.getElementById('engagementTarget').classList.toggle('hidden', !this.checked);
+        });
+        document.getElementById('kpi-conversion').addEventListener('change', function() {
+            document.getElementById('conversionTarget').classList.toggle('hidden', !this.checked);
+        });
+        document.getElementById('kpi-sales').addEventListener('change', function() {
+            document.getElementById('salesTarget').classList.toggle('hidden', !this.checked);
+        });
+        document.getElementById('kpi-consultation').addEventListener('change', function() {
+            document.getElementById('consultationTarget').classList.toggle('hidden', !this.checked);
+        });
+
+        // 表单提交处理（使用 AJAX）
+        document.getElementById('clientSurveyForm').addEventListener('submit', async function(e) {
+            e.preventDefault(); // 阻止默认提交
+            
+            const form = e.target;
+            const formData = new FormData(form);
+            const submitButton = form.querySelector('button[type="submit"]');
+            const buttonOriginalText = submitButton.innerHTML;
+            
+            // 显示提交中状态
+            submitButton.disabled = true;
+            submitButton.innerHTML = '<i class="fa fa-spinner fa-spin mr-2"></i>提交中...';
+            
+            try {
+                // 使用 Fetch API 提交表单
+                const response = await fetch(form.action, {
+                    method: 'POST',
+                    body: formData,
+                    headers: {
+                        'Accept': 'application/json'
+                    }
+                });
+                
+                if (response.ok) {
+                    // 提交成功，显示成功弹窗
+                    document.getElementById('successModal').classList.remove('hidden');
+                    // 重置表单
+                    form.reset();
+                } else {
+                    // 提交失败
+                    const data = await response.json();
+                    if (data.errors) {
+                        alert('提交失败：' + data.errors.map(error => error.message).join(', '));
+                    } else {
+                        alert('提交失败，请稍后重试');
+                    }
+                }
+            } catch (error) {
+                console.error('提交错误:', error);
+                alert('网络错误，请检查您的网络连接后重试');
+            } finally {
+                // 恢复按钮状态
+                submitButton.disabled = false;
+                submitButton.innerHTML = buttonOriginalText;
+            }
+        });
+
+        // 关闭成功弹窗
+        document.getElementById('closeModal').addEventListener('click', function() {
+            document.getElementById('successModal').classList.add('hidden');
+        });
+
+        // 添加表单验证
+        const form = document.getElementById('clientSurveyForm');
+        form.noValidate = true;
+        
+        form.addEventListener('input', function(e) {
+            const target = e.target;
+            if (target.hasAttribute('required')) {
+                if (target.value.trim() !== '') {
+                    target.classList.remove('border-red-500');
+                    target.classList.add('border-green-500');
+                } else {
+                    target.classList.remove('border-green-500');
+                    target.classList.add('border-red-500');
+                }
+            }
+        });
+
+        // 添加表单动画效果
+        const formSections = document.querySelectorAll('.form-section');
+        
+        formSections.forEach((section, index) => {
+            section.style.opacity = '0';
+            section.style.transform = 'translateY(20px)';
+            section.style.transition = 'opacity 0.5s ease, transform 0.5s ease';
+            
+            setTimeout(() => {
+                section.style.opacity = '1';
+                section.style.transform = 'translateY(0)';
+            }, 100 * index);
+        });
+    </script>
+</body>
+</html>
